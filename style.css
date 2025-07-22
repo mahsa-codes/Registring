@@ -1,7 +1,25 @@
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     margin-top: 60px;
 }
+
+.logout-page {
+    display: flex;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 
 #welcome {
     font-size: 40px;
@@ -9,4 +27,38 @@ body {
 
 .hidden {
     display: none;
+}
+
+#loginForm {
+    margin-top: 20px;
+    width: 500px;
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}
+.logSubmit {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.logSubmit button {
+    font-size: 20px;
+    padding: 10px;
+    max-width: 300px;
+    color: white;
+    background-color: rgb(6, 131, 131);
+    border: 1px solid rgb(235, 246, 246);
+    border-radius: 5px;
+    
+}
+.logSubmit a {
+    font-size: 20px;
+    padding-top: 10px;
 }
