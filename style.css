@@ -8,11 +8,7 @@ body {
     margin-top: 60px;
 }
 
-.logout-page {
-    display: flex;
-}
-
-.login-page {
+.login-page, .register-page, .logout-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,30 +21,40 @@ body {
     font-size: 40px;
 }
 
-.hidden {
+.hidden { 
     display: none;
 }
 
-#loginForm {
+#logoutBtn {
+    font-size: 20px;
+    padding: 10px;
+    max-width: 300px;
+    color: white;
+    background-color: rgb(161, 4, 38);
+    border: 1px solid rgb(235, 246, 246);
+    border-radius: 5px;
+}
+
+#loginForm, #registerForm {
     margin-top: 20px;
     width: 500px;
 }
 
-#loginForm input {
+#loginForm input, #registerForm input{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
     
 }
-.logSubmit {
+.logSubmit , .registerSubmit {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
 
 }
 
-.logSubmit button {
+.logSubmit button, .registerSubmit button {
     font-size: 20px;
     padding: 10px;
     max-width: 300px;
@@ -58,7 +64,7 @@ body {
     border-radius: 5px;
     
 }
-.logSubmit a {
+.logSubmit a , .registerSubmit a {
     font-size: 20px;
     padding-top: 10px;
 }
